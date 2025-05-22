@@ -1,61 +1,320 @@
+<!-- domina-play.com – bundle de páginas HTML para landing page e conteúdos internos -->
+
+<!-- =============================== index.html =============================== -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head> <link rel="stylesheet" href="style.css">
+<head>
   <meta charset="UTF-8">
-  <title><!-- {{product}} --> | <!-- {{tagline}} --></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-        content="<!-- {{short_description}} -->">
+  <meta name="description" content="Descubra acessórios BDSM premium, guias de práticas seguras e ofertas exclusivas. Tudo para iniciantes e experts viverem fantasias com confiança e prazer.">
+  <meta name="keywords" content="BDSM, acessórios BDSM, algemas, mordaça, chicote, bondage, dominação, submissão, sexshop, sex shop, dominaplay, brinquedos eróticos">
+  <title>DominaPlay • Acessórios BDSM Premium</title>
+  <link rel="canonical" href="https://dominaplay.com/">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet">
-  <!-- OpenGraph tags p/ social share -->
-  <meta property="og:type" content="product">
-  <meta property="og:title" content="<!-- {{product}} -->">
-  <meta property="og:description" content="<!-- {{short_description}} -->">
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DominaPlay – Acessórios BDSM Premium">
+  <meta property="og:description" content="Acesse o melhor do mundo BDSM com segurança, qualidade e prazer.">
   <meta property="og:image" content="assets/hero.jpg">
 </head>
-<body class="bg-zinc-50 text-zinc-800">
+<body class="bg-zinc-50 text-zinc-800 scroll-smooth">
+  <!-- NAV -->
+  <header class="bg-white shadow fixed w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <a href="#top" class="text-xl font-bold text-pink-600">DominaPlay</a>
+      <nav class="hidden md:flex gap-6 text-sm font-semibold">
+        <a href="#tipos" class="hover:text-pink-600">Tipos</a>
+        <a href="#praticas" class="hover:text-pink-600">Práticas Saudáveis</a>
+        <a href="#porque" class="hover:text-pink-600">Porquê</a>
+        <a href="#tendencia" class="hover:text-pink-600">Tendência</a>
+        <a href="#produtos" class="hover:text-pink-600">Produtos</a>
+        <a href="#cta" class="hover:text-pink-600">Oferta</a>
+      </nav>
+    </div>
+  </header>
+
   <!-- HERO -->
-  <section class="text-center py-16 px-4">
-    <img src="assets/hero.jpg" alt="<!-- {{product}} -->"
-         class="mx-auto w-3/4 md:w-1/3 mb-8">
-    <h1 class="text-3xl md:text-5xl font-bold mb-4"><!-- {{headline}} --></h1>
-    <p class="text-lg md:text-xl mb-6"><!-- {{subheadline}} --></p>
-    <a href="#comprar" class="inline-block bg-pink-500 hover:bg-pink-600 text-white
-       font-semibold py-3 px-8 rounded-xl shadow-lg transition">Quero experimentar</a>
+  <section id="top" class="text-center py-24 px-4 bg-gradient-to-b from-zinc-900 to-zinc-800 text-white">
+    <img src="assets/hero.jpg" alt="Acessórios BDSM" class="mx-auto w-3/4 md:w-1/3 mb-8 rounded-2xl shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">Liberte Seus Desejos</h1>
+    <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">A curadoria definitiva de acessórios BDSM para experiências intensas, seguras e consensuais.</p>
+    <a href="#produtos" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold py-4 px-10 rounded-full shadow-xl transition">Conhecer Produtos</a>
   </section>
 
-  <!-- BENEFITS -->
-  <section class="max-w-3xl mx-auto grid gap-6 md:grid-cols-3 px-4">
-    <!-- repetir bloco -->
-    <div class="bg-white p-6 rounded-2xl shadow">
-      <svg class="w-8 h-8 mb-4 mx-auto" fill="none" stroke="currentColor"><!-- ícone --></svg>
-      <h3 class="font-semibold mb-2">Silicone Premium</h3>
-      <p class="text-sm">Grau médico, hipoalergênico e aveludado.</p>
+  <!-- TIPOS DE BDSM -->
+  <section id="tipos" class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-6 text-center">Tipos de BDSM</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-justify text-lg leading-relaxed">
+      <div>
+        <h3 class="font-semibold text-pink-600 mb-2">Bondage &amp; Disciplina (B&amp;D)</h3>
+        <p>Explora restrição física com <a href="https://sexshopafiliado.com/cordas?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">cordas de bondage</a>, <a href="https://sexshopafiliado.com/algemas?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">algemas acolchoadas</a> e regras que elevam o controle físico e mental.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-pink-600 mb-2">Dominação &amp; Submissão (D&amp;S)</h3>
+        <p>Dinâmicas psicológicas onde poder e entrega se encontram. Experimente <a href="https://sexshopafiliado.com/coleiras?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">coleiras com guias</a> e <a href="https://sexshopafiliado.com/mordaças?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">mordaças de silicone</a>.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-pink-600 mb-2">Sadismo &amp; Masoquismo (S&amp;M)</h3>
+        <p>Sensações intensas através de <a href="https://sexshopafiliado.com/chicotes?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">chicotes de couro premium</a> e <a href="https://sexshopafiliado.com/velas?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">velas de cera quente segura</a>, sempre respeitando limites e prazer.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-pink-600 mb-2">Roleplay &amp; Fetiches</h3>
+        <p>Dê vida às fantasias com <a href="https://sexshopafiliado.com/mascaras?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">máscaras misteriosas</a> e <a href="https://sexshopafiliado.com/kits?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">kits temáticos</a>.</p>
+      </div>
+    </div>
+    <p class="text-center mt-8">
+      <a href="guia-bdsm.html" class="inline-block bg-zinc-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-zinc-800">Guia Completo de BDSM</a>
+    </p>
+  </section>
+
+  <!-- PRÁTICAS SAUDÁVEIS -->
+  <section id="praticas" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Práticas Saudáveis</h2>
+      <p class="text-lg leading-relaxed text-justify mb-6">Consentimento é a base. Adote protocolos <strong>SSC</strong> (São, Seguro e Consensual) e <strong>RACK</strong> (Risk Aware Consensual Kink). Combine <em>safe words</em>, comunicação clara e acessórios de qualidade. Acesse nossas <a href="seguranca-bdsm.html" class="underline hover:text-pink-600">dicas de segurança</a> e descubra como manter o prazer sem riscos.</p>
+      <ul class="grid md:grid-cols-3 gap-6 text-center text-sm">
+        <li class="bg-zinc-100 p-6 rounded-xl">Palavra de segurança sempre definida</li>
+        <li class="bg-zinc-100 p-6 rounded-xl">Higienização de acessórios</li>
+        <li class="bg-zinc-100 p-6 rounded-xl">Aftercare emocional e físico</li>
+      </ul>
     </div>
   </section>
 
-  <!-- PROVA SOCIAL -->
-  <section class="bg-white mt-12 py-12">
-    <h2 class="text-center text-2xl font-bold mb-8">O que dizem nossas clientes</h2>
-    <div class="max-w-2xl mx-auto space-y-6 px-4">
-      <!-- Depoimento -->
-      <blockquote class="bg-zinc-100 p-6 rounded-xl">
-        <p class="italic mb-2">“Explosão de prazer em segundos!”</p>
-        <cite class="text-xs text-zinc-500">Ana, 29&nbsp;anos</cite>
-      </blockquote>
+  <!-- PORQUE PRATICAR -->
+  <section id="porque" class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-6 text-center">Por que Praticar BDSM?</h2>
+    <p class="text-lg leading-relaxed text-justify mb-4">BDSM oferece autoconhecimento, conexão profunda e liberação de endorfinas. Muitos relatam aumento da confiança, redução do estresse e renovação da intimidade de casal. <a href="https://hotmart.com/product/curso-bdsm?ref=dominaplay" target="_blank" class="underline hover:text-pink-600">Conheça um curso completo</a> para explorar suas fantasias com segurança.</p>
+    <p class="text-center mt-8">
+      <a href="https://sexshopafiliado.com/kits-iniciantes?aff=dominaplay" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold">Kit Iniciante Recomendado</a>
+    </p>
+  </section>
+
+  <!-- TENDÊNCIA -->
+  <section id="tendencia" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Tendência Mundial</h2>
+      <p class="text-lg leading-relaxed text-justify mb-6">Relatórios de mercado mostram crescimento anual de 8,7% no segmento BDSM. Plataformas de streaming, livros e mídias sociais impulsionam a curiosidade. Veja dados completos em <a href="tendencias-bdsm.html" class="underline hover:text-pink-600">nossa análise de mercado</a> e descubra por que investir em acessórios de qualidade é apostar em uma tendência em ascensão.</p>
+      <div class="text-center">
+        <a href="https://sexshopafiliado.com/novidades?aff=dominaplay" target="_blank" class="inline-block bg-zinc-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-zinc-800">Ver Novidades 2025</a>
+      </div>
     </div>
   </section>
 
-  <!-- OFERTA -->
-  <section id="comprar" class="text-center py-16 px-4">
-    <h2 class="text-3xl font-bold mb-4">Garanta o seu agora</h2>
-    <p class="text-xl mb-2">De <s>R$ 299</s> por <span class="font-bold text-pink-600">R$ 219</span></p>
-    <p class="text-sm mb-6">Envio ultra-discreto + garantia 1 ano.</p>
-    <a href="https://pay.hotmart.com/..." target="_blank"
-       class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white
-       font-semibold py-4 px-12 rounded-xl shadow-lg transition">Comprar com segurança</a>
+  <!-- PERFIS DE DESEJO -->
+  <section class="max-w-6xl mx-auto py-16 px-6" id="perfis">
+    <h2 class="text-3xl font-bold mb-6 text-center">Desejos por Perfil</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-lg leading-relaxed">
+      <!-- Homem Dominante -->
+      <div class="bg-zinc-100 p-6 rounded-2xl">
+        <h3 class="font-semibold text-pink-600 mb-2">Homens Dominantes</h3>
+        <p>Buscam controle absoluto e acessórios robustos como <a href="https://sexshopafiliado.com/chicote-couro?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">chicotes de couro premium</a>, <a href="https://sexshopafiliado.com/coleira-metal?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">coleiras de metal</a> e <a href="https://sexshopafiliado.com/cinto-castidade?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">cintos de castidade</a>.</p>
+      </div>
+      <!-- Homem Submisso -->
+      <div class="bg-zinc-100 p-6 rounded-2xl">
+        <h3 class="font-semibold text-pink-600 mb-2">Homens Submissos</h3>
+        <p>Apreciam entrega e acessórios confortáveis: <a href="https://sexshopafiliado.com/algemas-neoprene?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">algemas de neoprene</a>, <a href="https://sexshopafiliado.com/morda%C3%A7a-bola?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">mordaças bola macias</a> e <a href="https://sexshopafiliado.com/vendas-seda?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">vendas de seda</a>.</p>
+      </div>
+      <!-- Mulher Dominante -->
+      <div class="bg-zinc-100 p-6 rounded-2xl">
+        <h3 class="font-semibold text-pink-600 mb-2">Mulheres Dominantes</h3>
+        <p>Unem poder e elegância com <a href="https://sexshopafiliado.com/chicote-spanking?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">spanking paddles luxuosos</a>, <a href="https://sexshopafiliado.com/luvas couro?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">luvas de couro</a> e <a href="https://sexshopafiliado.com/botas-overknee?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">botas over‑the‑knee</a>.</p>
+      </div>
+      <!-- Mulher Submissa -->
+      <div class="bg-zinc-100 p-6 rounded-2xl">
+        <h3 class="font-semibold text-pink-600 mb-2">Mulheres Submissas</h3>
+        <p>Procuram sensação de cuidado com <a href="https://sexshopafiliado.com/algemas-pelucia?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">algemas de pelúcia</a>, <a href="https://sexshopafiliado.com/kit-sensorial?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">kits sensoriais</a> e <a href="https://sexshopafiliado.com/lingerie-bdsm?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">lingeries BDSM</a>.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- FAQ & FOOTER omitidos p/ brevidade -->
+  <!-- PRODUTOS EM DESTAQUE -->
+  <section id="produtos" class="bg-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Produtos em Destaque</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card Produto -->
+        <a href="https://sexshopafiliado.com/algemas?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+          <img src="assets/algemas.jpg" alt="Algemas" class="w-full h-40 object-cover rounded-md mb-3">
+          <h3 class="font-semibold">Algemas Premium</h3>
+          <p class="text-sm text-zinc-500">Couro &amp; metal, ajuste seguro</p>
+        </a>
+        <a href="https://sexshopafiliado.com/chicotes?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+          <img src="assets/chicote.jpg" alt="Chicote" class="w-full h-40 object-cover rounded-md mb-3">
+          <h3 class="font-semibold">Chicote de Couro</h3>
+          <p class="text-sm text-zinc-500">Impacto preciso, cabo ergonômico</p>
+        </a>
+        <a href="https://sexshopafiliado.com/mordaças?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+          <img src="assets/mordaca.jpg" alt="Mordaça" class="w-full h-40 object-cover rounded-md mb-3">
+          <h3 class="font-semibold">Mordaça Bola Soft</h3>
+          <p class="text-sm text-zinc-500">Silicone macio, alça ajustável</p>
+        </a>
+        <a href="https://sexshopafiliado.com/kits?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+          <img src="assets/kit.jpg" alt="Kit BDSM" class="w-full h-40 object-cover rounded-md mb-3">
+          <h3 class="font-semibold">Kit Iniciante 6‑em‑1</h3>
+          <p class="text-sm text-zinc-500">Tudo para sua primeira sessão</p>
+        </a>
+      </div>
+      <p class="text-center mt-8">
+        <a href="produtos.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold py-4 px-12 rounded-full shadow transition">Ver Catálogo Completo</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA DE COMPRA -->
+  <section id="cta" class="text-center py-20 px-4 bg-gradient-to-t from-pink-600 to-pink-500 text-white">
+    <h2 class="text-4xl font-extrabold mb-4">Pronto para elevar o prazer?</h2>
+    <p class="text-xl mb-8">Entrega 100% discreta • Garantia de satisfação • Parcelamento em até 6x</p>
+    <a href="https://pay.hotmart.com/XXXX?checkoutMode=10&ref=dominaplay" target="_blank" class="inline-block bg-zinc-900 hover:bg-zinc-800 text-white font-semibold py-5 px-16 rounded-full shadow-xl transition">Comprar Agora</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zinc-900 text-zinc-400 text-sm py-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-semibold text-white mb-2">DominaPlay</h3>
+        <p>Conteúdo e produtos para adultos 18+. Pratique BDSM sempre com consentimento e segurança.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Recursos</h3>
+        <ul class="space-y-2">
+          <li><a href="guia-bdsm.html" class="hover:text-white underline">Guia BDSM</a></li>
+          <li><a href="seguranca-bdsm.html" class="hover:text-white underline">Dicas de Segurança</a></li>
+          <li><a href="tendencias-bdsm.html" class="hover:text-white underline">Tendências</a></li>
+          <li><a href="produtos.html" class="hover:text-white underline">Catálogo de Produtos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Contato</h3>
+        <p><a href="mailto:contato@dominaplay.com" class="underline hover:text-white">contato@dominaplay.com</a></p>
+      </div>
+    </div>
+    <p class="text-center text-xs text-zinc-500 mt-8">© 2025 DominaPlay. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Pixel / Analytics placeholder -->
+  <script><!-- Coloque seu código de rastreamento aqui --></script>
 </body>
 </html>
+
+<!-- =============================== guia-bdsm.html =============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Completo de BDSM • DominaPlay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+  <main class="max-w-4xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-bold mb-6">Guia Completo de BDSM</h1>
+    <p class="mb-4 text-lg leading-relaxed">Este guia reúne princípios, termos, dicas e técnicas para que iniciantes e praticantes avançados vivam experiências intensas e seguras...</p>
+    <h2 class="text-2xl font-semibold mt-8 mb-2">Glossário Essencial</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>Aftercare:</strong> cuidado emocional e físico pós‑sessão.</li>
+      <li><strong>Edge Play:</strong> práticas com risco elevado, sempre para avançados.</li>
+      <!-- ... -->
+    </ul>
+    <p class="mt-8"><a href="https://hotmart.com/product/curso-bdsm?ref=dominaplay" target="_blank" class="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700">Aprofunde com um curso exclusivo</a></p>
+  </main>
+  <footer class="text-center text-sm text-zinc-500 py-8"><a href="index.html" class="underline">← Voltar</a></footer>
+</body>
+</html>
+
+<!-- =============================== seguranca-bdsm.html =============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicas de Segurança no BDSM • DominaPlay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+  <main class="max-w-4xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-bold mb-6">Segurança e Consentimento</h1>
+    <p class="text-lg leading-relaxed mb-4">Praticar BDSM com segurança é inegociável. Confira abaixo nossas recomendações...</p>
+    <h2 class="text-2xl font-semibold mt-6 mb-2">Checklist Pré‑Sessão</h2>
+    <ul class="list-decimal pl-6 space-y-2">
+      <li>Conversa franca sobre limites e expectativas.</li>
+      <li>Definição de palavra de segurança.</li>
+      <li>Verificação de integridade dos acessórios.</li>
+    </ul>
+    <h2 class="text-2xl font-semibold mt-8 mb-2">Produtos Seguros Recomendados</h2>
+    <p class="mb-2"><a href="https://sexshopafiliado.com/algemas-neoprene?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">Algemas de neoprene acolchoadas</a></p>
+    <p class="mb-2"><a href="https://sexshopafiliado.com/corda-algodao?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">Corda de algodão macio 10&nbsp;m</a></p>
+    <p class="mb-2"><a href="https://sexshopafiliado.com/kit-aftercare?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">Kit Aftercare (creme + manta)</a></p>
+  </main>
+  <footer class="text-center text-sm text-zinc-500 py-8"><a href="index.html" class="underline">← Voltar</a></footer>
+</body>
+</html>
+
+<!-- =============================== tendencias-bdsm.html =============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tendências do Mercado BDSM • DominaPlay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+  <main class="max-w-4xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-bold mb-6">Tendências 2025 &amp; Além</h1>
+    <p class="text-lg leading-relaxed mb-4">O mercado global de BDSM cresce impulsionado por...</p>
+    <h2 class="text-2xl font-semibold mt-6 mb-2">Dados de Crescimento</h2>
+    <p class="mb-2">Relatório XYZ aponta CAGR de 8,7% (2020‑2025) em vendas de acessórios BDSM.</p>
+    <h2 class="text-2xl font-semibold mt-8 mb-2">Produtos em Alta</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Dispositivos de controle por app (<a href="https://sexshopafiliado.com/vibrador-app?aff=dominaplay" target="_blank" class="underline hover:text-pink-600">ver modelos</a>)</li>
+      <li>Kits híbridos sucção + vibração</li>
+      <li>Materiais veganos e sustentáveis</li>
+    </ul>
+  </main>
+  <footer class="text-center text-sm text-zinc-500 py-8"><a href="index.html" class="underline">← Voltar</a></footer>
+</body>
+</html>
+
+<!-- =============================== produtos.html =============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos BDSM • DominaPlay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+  <main class="max-w-6xl mx-auto py-12 px-6">
+    <h1 class="text-4xl font-bold mb-6 text-center">Catálogo Completo</h1>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Reutilize o mesmo card para vários produtos -->
+      <a href="https://sexshopafiliado.com/algemas?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+        <img src="assets/algemas.jpg" alt="Algemas" class="w-full h-40 object-cover rounded-md mb-3">
+        <h3 class="font-semibold">Algemas Premium</h3>
+      </a>
+      <a href="https://sexshopafiliado.com/chicotes?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+        <img src="assets/chicote.jpg" alt="Chicote" class="w-full h-40 object-cover rounded-md mb-3">
+        <h3 class="font-semibold">Chicote de Couro</h3>
+      </a>
+      <a href="https://sexshopafiliado.com/mordaças?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+        <img src="assets/mordaca.jpg" alt="Mordaça" class="w-full h-40 object-cover rounded-md mb-3">
+        <h3 class="font-semibold">Mordaça Bola Soft</h3>
+      </a>
+      <a href="https://sexshopafiliado.com/coleiras?aff=dominaplay" target="_blank" class="block bg-zinc-100 p-4 rounded-2xl text-center hover:shadow-lg transition">
+        <img src="assets/coleira.jpg" alt="Coleira" class="w-full h-40 object-cover rounded-md mb-3">
+        <h3 class="font-semibold">Coleira &amp; Guia</h3>
+      </a>
+      <!-- Adicione quantos produtos quiser -->
+    </div>
+  </main>
+  <footer class="text-center text-sm text-zinc-500 py-8"><a href="index.html" class="underline">← Voltar</a></footer>
+</body>
+</html>
+
+<!-- FIM DO BUNDLE DOMINAPLAY -->
