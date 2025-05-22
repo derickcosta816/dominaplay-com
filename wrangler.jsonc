@@ -1,8 +1,6 @@
         {   
-
-       "name": "domina",
+       "name": "dominaplay",
         "compatibility_date": "2025-05-22",
-            "assets": {
-	      "directory": "./public"
-	    }
+            "main": "./_worker.js",
+            "assets":  { "directory": "./public"}
 	  }
